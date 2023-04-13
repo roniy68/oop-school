@@ -7,13 +7,15 @@
   <img src="readme-assets/murple_logo.png" alt="logo" width="140"  height="auto" />
   <br/>
 
-  <h3><b>Enumerable</b></h3>
+  <h3><b>OOP-School</b></h3>
 
 </div>
 
 # 📗 Table of Contents
+
 ## 📑 Table of Contents
-- [📊 Enumerable ](#-enumerable-)
+
+- [📊 OOP-School ](#-OOP-School-)
   - [🛠 Built With ](#-built-with-)
     - [🧰 Tech Stack ](#-tech-stack-)
     - [💎 Key Features ](#-key-features-)
@@ -33,9 +35,9 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📊 Enumerable <a name="about-project"></a>
+# 📊 OOP-School <a name="about-project"></a>
 
-A Enumerable with Ruby
+A OOP-School with Ruby
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -55,8 +57,6 @@ A Enumerable with Ruby
 
 <!-- LIVE DEMO -->
 
-
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
@@ -74,8 +74,8 @@ In order to run this project you need [Node.js](https://nodejs.org/en/) installe
 Clone this repository to your desired folder:
 
 ```sh
-  git clone https://github.com/roniy68/decode-morse-rb
-  cd decode-morse-rb
+  git clone https://github.com/roniy68/oop-school
+  cd oop-school
 ```
 
 ### Install
@@ -91,13 +91,8 @@ Install the dependencies with:
 To run the project, execute the following command:
 
 ```sh
-  ruby decode-morse-rb
+  ruby main.rb
 ```
-
-
-### Output
-
-![image](https://user-images.githubusercontent.com/77187003/230568404-e7bb54cd-5f0c-4ea1-a7c0-7db3fa512c8a.png)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -112,30 +107,24 @@ I am always looking for ways to improve my project. If you have any suggestions 
 [![Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/ahroniy)
 [![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:ahmed.hasan.rony@gmail.com)
 
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [x] **Mobile UI**
+- [x] **Gem Bundle**
 - [ ] **Visualize contribution**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CONTRIBUTING -->
+
 ## 📧 Authors <a name="authors"></a>
 
 👤 **Ahmed Hasan Rony**
 
-- ***[Ahmed Hasan Rony](https://github.com/roniy68)***
-
-👤 **Muhammad Aleem**
-
-- GitHub: [@MAleemH](https://github.com/MAleemH)
-- Twitter: [@MAleemHashmi1](https://twitter.com/MAleemHashmi1)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/muhammad-aleem-hashmi-09658a171/)
+- **_[Ahmed Hasan Rony](https://github.com/roniy68)_**
 
 ## 🤝 Contributing <a name="contributing"></a>
 
@@ -158,6 +147,7 @@ If you like this project, please consider giving it a ⭐.
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 This project was inspired by:
+
 - [GitHub Finder](https://github.com/JasurbekIsokov/github-finder)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
