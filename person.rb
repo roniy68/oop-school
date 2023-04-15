@@ -3,7 +3,7 @@ require './namable'
 class Person < Nameable
   attr_accessor :name, :age
 
-  def initialize(age, name)
+  def initialize(age, name = 'Unkown')
     super(name)
 
     @name = name
