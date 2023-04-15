@@ -1,21 +1,11 @@
-require_relative 'rental'
-
-class Nameable
-  attr_accessor :name
-
-  def initialize(name)
-    @name = name
-  end
-
-  def correct_name
-    raise NotImplementedError, 'Kindly Implement correct_name method to return the correct name'
-  end
-end
+require './namable'
 
 class Person < Nameable
+
   attr_accessor :name, :rental, :age, :generated_id, :id
 
   def initialize(name, age)
+
     super(name)
 
     @name = name
@@ -45,6 +35,7 @@ class Person < Nameable
     @name
   end
 
+
   def add_rental(date, book)
     Rental.new(date, book, self)
   end
@@ -64,6 +55,7 @@ class Person < Nameable
     @age >= 18
   end
 end
+
 
 class BaseDecorator < Nameable
   def initialize(nameable)
