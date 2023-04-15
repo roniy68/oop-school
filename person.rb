@@ -1,11 +1,9 @@
 require './namable'
 
 class Person < Nameable
-
   attr_accessor :name, :rental, :age, :generated_id, :id
 
   def initialize(name, age)
-
     super(name)
 
     @name = name
@@ -35,7 +33,6 @@ class Person < Nameable
     @name
   end
 
-
   def add_rental(date, book)
     Rental.new(date, book, self)
   end
@@ -55,7 +52,6 @@ class Person < Nameable
     @age >= 18
   end
 end
-
 
 class BaseDecorator < Nameable
   def initialize(nameable)
