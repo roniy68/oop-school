@@ -1,3 +1,5 @@
+require_relative "rental"
+
 class Nameable
   attr_accessor :name
 
@@ -6,12 +8,12 @@ class Nameable
   end
 
   def correct_name
-    raise NotImplementedError, 'Kindly Implement correct_name method to return the correct name'
+    raise NotImplementedError, "Kindly Implement correct_name method to return the correct name"
   end
 end
 
 class Person < Nameable
-  attr_accessor :name, :age
+  attr_accessor :name, :age, :rental
 
   def initialize(age, name)
     super(name)
@@ -19,6 +21,8 @@ class Person < Nameable
     @name = name
 
     @age = age
+
+    @rental = []
   end
 
   def can_use_services?
@@ -31,6 +35,10 @@ class Person < Nameable
 
   def correct_name
     @name
+  end
+
+  def add_rental(date, book)
+    Rental.new(date, book, self)
   end
 
   private
@@ -64,7 +72,7 @@ class TrimmerDecorator < BaseDecorator
   end
 end
 
-person = Person.new(22, 'maximilianus')
+person = Person.new(22, "maximilianus")
 
 puts person.correct_name
 
