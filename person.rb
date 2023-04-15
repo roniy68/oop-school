@@ -1,4 +1,4 @@
-require_relative "rental"
+require_relative 'rental'
 
 class Nameable
   attr_accessor :name
@@ -8,7 +8,7 @@ class Nameable
   end
 
   def correct_name
-    raise NotImplementedError, "Kindly Implement correct_name method to return the correct name"
+    raise NotImplementedError, 'Kindly Implement correct_name method to return the correct name'
   end
 end
 
@@ -72,7 +72,7 @@ class TrimmerDecorator < BaseDecorator
   end
 end
 
-person = Person.new(22, "maximilianus")
+person = Person.new(22, 'maximilianus')
 
 puts person.correct_name
 
