@@ -1,26 +1,49 @@
 require './namable'
 
 class Person < Nameable
-  attr_accessor :name, :age
+  attr_accessor :name, :rental, :age, :generated_id, :id
 
-  def initialize(age, name = 'Unkown')
+  def initialize(name, age)
     super(name)
 
     @name = name
 
     @age = age
+
+    @generated_id = []
+
+    @id = generate_unique_number
+
+    @rental = []
   end
 
   def can_use_services?
     if is_of_age? || @parent_permission
+
       true
+
     else
+
       false
+
     end
   end
 
   def correct_name
     @name
+  end
+
+  def add_rental(date, book)
+    Rental.new(date, book, self)
+  end
+
+  def generate_unique_number
+    number = rand(1..1000)
+    number = rand(1..1000) while @generated_id.include?(number)
+
+    @generated_id << number
+
+    number
   end
 
   private
@@ -30,14 +53,30 @@ class Person < Nameable
   end
 end
 
-person = Person.new(22, 'maximilianus')
+class BaseDecorator < Nameable
+  def initialize(nameable)
+    super
 
-puts person.correct_name
+    @nameable = nameable
+  end
+end
 
-capitalized_person = CapitalizeDecorator.new(person)
+class CapitalizeDecorator < BaseDecorator
+  def correct_name
+    @nameable.correct_name.capitalize
+  end
+end
 
-puts capitalized_person.correct_name
+class TrimmerDecorator < BaseDecorator
+  def correct_name
+    if @nameable.correct_name.length > 10
 
-capitalized_trimmed_person = TrimmerDecorator.new(capitalized_person)
+      @nameable.correct_name[0..9]
 
-puts capitalized_trimmed_person.correct_name
+    else
+
+      @nameable.correct_name
+
+    end
+  end
+end
