@@ -37,7 +37,7 @@
 
 # 📊 OOP-School <a name="about-project"></a>
 
-A OOP-School with Ruby
+A Simple app with Ruby with Basic UI and functionalities. It is a practice repository to understand the basics of OOP [ object oriented programming] in RUBY.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -130,7 +130,7 @@ I am always looking for ways to improve my project. If you have any suggestions 
 
 I welcome any and all contributions to my website! If you have an idea for a new feature or have found a bug, please open an issue or submit a pull request.
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/roniy68/oop-school/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
